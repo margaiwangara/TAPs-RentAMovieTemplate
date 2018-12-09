@@ -1,0 +1,23 @@
+.navbar {
+  border-bottom: solid 3px #ba4a00; }
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #c0c0c0; }
+
+#movie-carousel-section {
+  min-height: 500px;
+  width: 100%; }
+
+#movies-slide .carousel-item {
+  height: 500px; }
+#movies-slide .movie-image-1 {
+  background: url("/img/another-phone-bg.jpg");
+  background-size: cover; }
+#movies-slide .movie-image-2 {
+  background: url("/img/phone-bg.jpg");
+  background-size: cover; }
+#movies-slide .movie-image-3 {
+  background: url("/img/laptop-1.jpg");
+  background-size: cover; }
