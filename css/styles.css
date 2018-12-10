@@ -21,3 +21,17 @@ body {
 #movies-slide .movie-image-3 {
   background: url("/img/laptop-1.jpg");
   background-size: cover; }
+
+#new-releases-section .dark-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+#new-releases-section a {
+  text-decoration: none;
+  color: #e2e0e0; }
+#new-releases-section .card img {
+  height: 220px; }
