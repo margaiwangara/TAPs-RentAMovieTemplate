@@ -55,6 +55,16 @@
         <div class="movie-carousel-inner">
             <div class="row">
                 <div class="col">
+                    <div class="py-2 bg-light text-center">
+                        <div class="container">
+                            <span class="small">
+                                <i class="fas fa-rss"></i>
+                                <a href="#" class="movie-rss">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit perferendis quos dolorem est quibusdam quis, incidunt culpa totam delectus soluta.
+                                </a>
+                            </span>
+                        </div>
+                    </div>
                     <div class="carousel slide text-dark text-left" data-ride="carousel" id="movies-slide">
                         <ul class="carousel-indicators">
                             <li data-target="#movies-slide" data-slide-to="0" class="active"></li>
@@ -236,6 +246,27 @@
         $('#year').text(" "+new Date().getFullYear());
 
         $(document).ready(function () {
+                var data = [
+                    "lorem ipsum is a sample text for engineer",
+                    "lorem ipsum is a sample text for engineer 2",
+                    "lorem ipsum is a sample text for engineer 3",
+                    "lorem ipsum is a sample text for engineer 4",
+                    "lorem ipsum is a sample text for engineer 5",
+                ];
+
+                var i = 0;
+                
+                setInterval(function(){
+                    if(i < data.length){
+                        console.log(data[i]);
+                        i++;
+                    }
+                    else{
+                        i = 0;
+                    }
+                    
+                }, 5000)
+
                 $.ajax({
                     url: "",
                     method: "GET",
