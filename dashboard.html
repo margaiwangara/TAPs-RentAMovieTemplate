@@ -142,6 +142,20 @@
         //get current year
         $('#year').text(new Date().getFullYear());
     </script>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                url:"",
+                method:"GET",
+                success:function(data){
+                    console.log(data);
+                },
+                error:function(x){
+                    console.log(x.status);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
