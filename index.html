@@ -258,7 +258,8 @@
                 
                 setInterval(function(){
                     if(i < data.length){
-                        console.log(data[i]);
+                        // console.log(data[i]);
+                        $(".movie-rss").text(data[i]).fadeIn();
                         i++;
                     }
                     else{
@@ -268,10 +269,30 @@
                 }, 5000)
 
                 $.ajax({
-                    url: "",
+                    url: "https://newsapi.org/v2/top-headlines?category=technology&country=us&apiKey=e773f762c809423eae750354d71aaeb7",
                     method: "GET",
+                    dataType:"json",
                     success: function (data) {
-                        console.log(data);
+                        //console.log(data.articles);
+                        var articles = {
+                            'decription': [],
+                            'urls': []
+                            
+                        };
+                        
+                        if(data.status == "ok"){
+                            var sample = [];
+                            data.articles.forEach(function(value, key){
+                                console.log(value);
+                            });
+                            // data.articles.forEach(function(value){
+                            //     articles.decription.push(value.description);
+                            //     articles.url.push(value.url);
+                            // });
+
+                            //console.log(articles.decription);
+                            
+                        }
                     },
                     error: function (x) {
                         console.log(x.status);
