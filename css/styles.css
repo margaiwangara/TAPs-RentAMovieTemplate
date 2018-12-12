@@ -24,10 +24,10 @@ body {
 
 #new-releases-section .dark-overlay {
   background: rgba(0, 0, 0, 0.4);
-  height: 100%;
+  height: 50%;
   width: 100%;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: 1; }
 #new-releases-section a {
@@ -35,3 +35,30 @@ body {
   color: #e2e0e0; }
 #new-releases-section .card img {
   height: 220px; }
+
+#trending-daily-section .dark-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1; }
+#trending-daily-section a {
+  text-decoration: none;
+  color: #e2e0e0; }
+#trending-daily-section .card img {
+  height: 220px; }
+
+#dark-overlay-body {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1043;
+  min-height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0; }
+  #dark-overlay-body .dark-overlay-body-inner {
+    padding-top: 50px; }
+  #dark-overlay-body img {
+    height: 220px; }

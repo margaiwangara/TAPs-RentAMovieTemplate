@@ -57,11 +57,9 @@
                 <div class="col">
                     <div class="py-2 bg-light text-center">
                         <div class="container">
-                            <span class="small">
-                                <i class="fas fa-rss"></i>
-                                <a href="#" class="movie-rss">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit perferendis quos dolorem est quibusdam quis, incidunt culpa totam delectus soluta.
-                                </a>
+                            <!-- <span class="font-weight-bold align-left">Top Headlines:</span> -->
+                            <span class="small movie-rss">
+                                
                             </span>
                         </div>
                     </div>
@@ -128,6 +126,35 @@
         </div>
     </section>
 
+    <section id="trending-daily-section" class="bg-light px-5">
+        <div class="trending-daily-inner">
+            <div class="row">
+                <div class="col">
+                    <h4 class="display-5 border-bottom p-2 my-3">Trending Movies - Today</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-deck p-2 mb-1 text-light text-center" id="api-movies">
+                        
+                    </div>
+    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="p-2 mb-2">
+                        <span class="small text-muted border-right border-2 mr-2 p-2">
+                            
+                            Courtesy of TMdb
+                        </span>
+                        <a href="#" class="small text-primary text-right">View More >></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="new-releases-section" class="bg-light px-5">
         <div class="new-releases-inner">
             <div class="row">
@@ -137,7 +164,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card-deck p-2 mb-1 text-light text-center">
+                    <div class="card-deck p-2 mb-1 text-light text-center" >
                         <div class="card card-movie-1">
                             <img src="/img/black-panther-sm.jpg" alt="black-panther-poster" class="rounded img-fluid">
                             <a href="#">
@@ -234,6 +261,95 @@
             </div>
         </div>
     </footer>
+
+    <div id="dark-overlay-body">
+        <div class="dark-overlay-body-inner">
+            <div class="row">
+                <div class="col-md-6 offset-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <h4 class="display-5 border-bottom py-2 mb-3">Trailer</h4>
+                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 poster-space">
+                                    <img src="img/infinity-war-poster-sm.jpg" alt="infinity-war-poster" class="img-fluid rounded">
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="display-5">Avengers: Infinity War</h3>
+                                    <p>
+                                        <span class="small">
+                                            <i class="far fa-comment"></i> EN
+                                            <span class="border-left border-right px-2">
+                                                <i class="far fa-calendar-alt"></i> 1 Jan 2018
+                                            </span>
+                                            <span><i class="far fa-star"></i> 4.5 out of 367 responses</span>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus placeat ipsum dicta. A, saepe.
+                                    </p>
+                                </div>
+                                <!-- <div class="col-md">
+                                    <div class="d-flex flex-xs-wrap">
+                                        <div class="align-content-start mr-2">
+                                            <img src="img/infinity-war-poster-sm.jpg" alt="infinity-war-poster" class="rounded">
+                                        </div>
+                                        <div class="align-content-end">
+                                            <h3 class="display-5">Avengers: Infinity War</h3>
+                                            <p>
+                                                <span class="small">
+                                                    <i class="far fa-comment"></i> EN
+                                                    <span class="border-left border-right px-2">
+                                                        <i class="far fa-calendar-alt"></i> 1 Jan 2018
+                                                    </span>
+                                                    <span><i class="far fa-star"></i> 4.5 out of 367 responses</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus placeat ipsum dicta. A, saepe.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <h4 class="display-5 border-bottom py-2 mb-3">User Rentals</h4>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Date Borrowed</th>
+                                                    <th>Return Date(EDR)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>John Doe</td>
+                                                    <td>1 Jan 2013 at 12:30pm</td>
+                                                    <td>25 Jan 2013 at 12:00pm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jane Doe</td>
+                                                    <td>1 Apr 2013 at 12:30pm</td>
+                                                    <td>25 Apr 2013 at 12:00pm</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Scripts-->
     <!--Bootstrap and JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -246,28 +362,6 @@
         $('#year').text(" "+new Date().getFullYear());
 
         $(document).ready(function () {
-                var data = [
-                    "lorem ipsum is a sample text for engineer",
-                    "lorem ipsum is a sample text for engineer 2",
-                    "lorem ipsum is a sample text for engineer 3",
-                    "lorem ipsum is a sample text for engineer 4",
-                    "lorem ipsum is a sample text for engineer 5",
-                ];
-
-                var i = 0;
-                
-                setInterval(function(){
-                    if(i < data.length){
-                        // console.log(data[i]);
-                        $(".movie-rss").text(data[i]).fadeIn();
-                        i++;
-                    }
-                    else{
-                        i = 0;
-                    }
-                    
-                }, 5000)
-
                 $.ajax({
                     url: "https://newsapi.org/v2/top-headlines?category=technology&country=us&apiKey=e773f762c809423eae750354d71aaeb7",
                     method: "GET",
@@ -275,27 +369,82 @@
                     success: function (data) {
                         //console.log(data.articles);
                         var articles = {
-                            'decription': [],
-                            'urls': []
+                            'title': [],
+                            'urls':[]
                             
                         };
                         
                         if(data.status == "ok"){
-                            var sample = [];
+                            
                             data.articles.forEach(function(value, key){
-                                console.log(value);
+                                articles.title.push(value['title']);
+                                articles.urls.push(value['url']);
                             });
-                            // data.articles.forEach(function(value){
-                            //     articles.decription.push(value.description);
-                            //     articles.url.push(value.url);
-                            // });
-
-                            //console.log(articles.decription);
+                            
+                            var i = 0;
+                            $(".movie-rss").html("<b>Top Headlines</b>");
+                            setInterval(function(){
+                                if(i < articles.title.length){
+                                    $(".movie-rss").html("<a href='"+articles.urls[i]+"' target='_blank'>"+articles.title[i]+"</a>");
+                                    i++;
+                                }else
+                                {
+                                    i = 0;
+                                }
+                                
+                            }, 5000);
+                            
                             
                         }
                     },
                     error: function (x) {
                         console.log(x.status);
+                    }
+                });
+                var movies = {
+                    'id':[],
+                    'originalLanguage':[],
+                    'originalTitle':[],
+                    'overview':[],
+                    'posterPath':[],
+                    'releaseDate':[],
+                    'title':[],
+                    'video':[],
+                    'voteAverage':[],
+                    'voteCount':[],
+                    'popularity':[],
+                    'base':'https://image.tmdb.org/t/p/original',
+                };
+
+                $.ajax({
+                    url:"https://api.themoviedb.org/3/trending/movie/day?api_key=7538a1ba766c36605ab0e8e10bab23da&language=en-US&page=1",
+                    method:"GET",
+                    dataType:"json",
+                    success:function(data){
+                        data.results.forEach(function(value){
+                            movies.id.push(value['id']);
+                            movies.posterPath.push(value['poster_path']);
+                            movies.title.push(value['title']);
+                            movies.video.push(value['video']);
+                        });
+                        
+                        var movieData = "";
+                        for(var i=0;i < 7;i++){
+                            movieData += "<div class='card'>";
+                            movieData += "<img src='" + movies.base + movies.posterPath[i] + "' alt='" + movies.title[i] +"-poster' class='rounded img-fluid'>";
+                            movieData += "<div class='dark-overlay rounded></div>";
+                            movieData += "<div class='card-img-overlay'><small class='font-weight-bold text-capitalize'><a href='#' data-movie-id='"+ movies.id[i]+"'>"+movies.title[i]+"</a></small>";
+                            movieData += "<br><a href='#' data-movie-id='"+ movies.id[i] +"'><i class='fas fa-play-circle mr-1'></i><i class='fas fa-info-circle'></i></a></div></div>";
+                            
+                            //add to moviedata tag
+                            $("#api-movies").html(movieData);
+                            
+
+                        }
+                    },
+                    error:function(x){
+                        console.log(x.status);
+                        $("#api-movies").addClass('text-center').html("<h4 class='display-5'>There are no movies to display</h4>");
                     }
                 });
             });
