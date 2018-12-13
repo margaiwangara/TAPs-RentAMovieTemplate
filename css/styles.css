@@ -9,9 +9,22 @@ body {
 #movie-carousel-section {
   min-height: 500px;
   width: 100%; }
-  #movie-carousel-section .rss-display a {
-    color: #000;
-    text-decoration: none; }
+
+#news-feeds {
+  height: 40px;
+  border-bottom: solid 3px #ba4a00; }
+  #news-feeds .rss-display a {
+    color: burlywood;
+    font-weight: bold; }
+  #news-feeds .rss-display a:hover {
+    text-decoration: underline; }
+  #news-feeds .news-label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 130px;
+    background: #ba4a00; }
 
 #movies-slide .carousel-item {
   height: 500px; }
@@ -81,3 +94,12 @@ body {
 
 #show-movie-section .show-movie-inner {
   padding-top: 50px; }
+
+#page-title {
+  border-bottom: solid 3px #ba4a00; }
+
+#data-display .data-display-inner {
+  padding-top: 50px; }
+  #data-display .data-display-inner canvas {
+    height: auto;
+    width: 100%; }

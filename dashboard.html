@@ -18,7 +18,7 @@
 </head>
 
 <body class="bg-light">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light py-4 shadow">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <i class="far fa-play-circle"></i> RentAMovie<small class="font-weight-light text-muted">.com</small>
@@ -56,74 +56,158 @@
         </div>
     </nav>
 
-    <section id="stats-display-section">
-        <div class="container stats-display-inner p-3">
+    <section id="page-title" class="bg-primary">
+        <div class="page-title-inner text-white container">
             <div class="row">
                 <div class="col">
-                    <div class="card-deck">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <i class="fas fa-home fa-3x"></i>
-                                    </div>
-                                    <div class="col-md-6">
-                                        Home<br>
-                                        <small class="text-muted">152 Views</small>
-                                    </div>
-                                </div>
+                    <h4 class="display-4 p-2">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="data-display">
+        <div class="data-display-inner container">
+            <div class="row mb-3 text-center text-white">
+                <div class="col-md-3">
+                    <div class="card bg-info">
+                        <div class="card-body">
+                            <h3>Customers</h3>
+                            <h4 class="display-4">
+                                <i class="far fa-folder"></i> 25
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-success">
+                        <div class="card-body">
+                            <h3>Users</h3>
+                            <h4 class="display-4">
+                                <i class="fas fa-users"></i> 20
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-primary">
+                        <div class="card-body">
+                            <h3>Movies</h3>
+                            <h4 class="display-4">
+                                <i class="fas fa-film"></i> 30
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-danger">
+                        <div class="card-body">
+                            <h3>Movies Rented</h3>
+                            <h4 class="display-4">
+                                <i class="fas fa-tags"></i> 12
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <h3 class="display-5 border-bottom border-2 py-2 mb-3">Rentals</h3>
+                    <canvas id="rentals-chart">
+                        <!---Rentals chart goes here-->
+                    </canvas>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="display-5 border-bottom border-2 py-2 mb-3">Movie Genres</h3>
+                            <canvas id="xmovie-genres-chart">
+                                <!--Movie Genres pie goes here-->
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="display-5 border-bottom py-2 mb-3">Most Recent Customers</h3>
+                            <div class="table-responsive-sm">
+                                <table class="table table-hover table-bordered table-striped">
+                                    <thead class="bg-info">
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Membership Type</th>
+                                            <th>Date Added</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>Pay As You Go</td>
+                                            <td>20 May 2017 at 12:10pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jane Doe</td>
+                                            <td>Monthly</td>
+                                            <td>31 Aug 2017 at 9:15am</td>
+                                        </tr>
+                                        <tr>
+                                            <td>John Snow</td>
+                                            <td>Yearly</td>
+                                            <td>12 Dec 2017 at 9:00am</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lannisters</td>
+                                            <td>Pay You Debt</td>
+                                            <td>11 Jan 2018 at 12:12pm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <i class="fas fa-home fa-3x"></i>
-                                    </div>
-                                    <div class="col-md-6">
-                                        Home<br>
-                                        <small>152 Views</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <i class="fas fa-home fa-3x"></i>
-                                    </div>
-                                    <div class="col-md-6">
-                                        Home<br>
-                                        <small>152 Views</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <i class="fas fa-home fa-3x"></i>
-                                    </div>
-                                    <div class="col-md-6">
-                                        Home<br>
-                                        <small>152 Views</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <i class="fas fa-home fa-3x"></i>
-                                    </div>
-                                    <div class="col-md-6">
-                                        Home<br>
-                                        <small>152 Views</small>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="display-5 border-bottom py-2 mb-3">Recently Added Movies</h3>
+                            <div class="table-responsive-sm">
+                                <table class="table table-hover table-bordered table-striped">
+                                    <thead class="bg-primary">
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Genre</th>
+                                            <th>Release Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Avengers: Infinity War</td>
+                                            <td>Action</td>
+                                            <td>20 May 2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Venom</td>
+                                            <td>Sci-Fi</td>
+                                            <td>31 Aug 2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ant-Man And The Wasp</td>
+                                            <td>Action</td>
+                                            <td>12 Dec 2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A Simple Favor</td>
+                                            <td>Mystery</td>
+                                            <td>11 Jan 2018</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -136,11 +220,57 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js
+"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    
     <!--Custom Script-->
     <script>
         //get current year
         $('#year').text(new Date().getFullYear());
+
+        $(document).ready(function(){
+            var canvasId = document.getElementById("rentals-chart").getContext('2d');
+
+            var rentalsChart = new Chart(canvasId, {
+                type:"line",
+                data:{
+                    label:["Red", "Blue", "Green", "Pink", "Purple", "Yellow"],
+                    datasets:[{
+                        label:"# no of votes",
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor:[
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor:[
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ], 
+                        borderWidth:1
+                    }]
+                }, 
+                options:{
+                    scales:{
+                        yAxes:[{
+                            ticks:{
+                                beginAtZero: false
+                            }
+                        }]
+                    }
+                }
+                
+            });
+            
+        });
     </script>
 </body>
 

@@ -16,15 +16,31 @@ body{
     min-height: 500px;
     width: 100%;
 
+}
+
+#news-feeds{
+    height: 40px;
+    border-bottom: solid 3px $margai-border;
     .rss-display{
         a{
-            color: #000;
-            text-decoration: none;
+            color:burlywood;
+            font-weight: bold;
+        }
+        a:hover{
+            text-decoration: underline;
         }
     }
-    
 
+    .news-label{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 130px;
+        background: $margai-border;
+    }
 }
+
 #movies-slide{
     .carousel-item{
         height: 500px;
@@ -128,3 +144,21 @@ body{
         padding-top: 50px;
     }
 }
+
+#page-title{
+    border-bottom: solid 3px $margai-border;
+}
+
+#data-display{
+    .data-display-inner{
+        padding-top: 50px;
+
+        canvas{
+            height: auto;
+            width: 100%;
+        }
+
+    }
+
+}
+

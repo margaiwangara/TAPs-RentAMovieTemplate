@@ -50,19 +50,25 @@
             </div>
         </div>
     </nav>
-
+    <section id="news-feeds" class="bg-dark">
+        <div class="row">
+            <div class="col">
+                <div class="py-2 text-center rss-display">
+                    <span class="py-2 news-label font-weight-bold text-light text-center d-lg-block">Tech Feeds</span>
+                    <div class="container">
+                        <!-- <span class="font-weight-bold align-left">Top Headlines:</span> -->
+                        <span class="small movie-rss">
+                
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="movie-carousel-section">
         <div class="movie-carousel-inner">
             <div class="row">
                 <div class="col">
-                    <div class="py-2 bg-warning text-center rss-display">
-                        <div class="container">
-                            <!-- <span class="font-weight-bold align-left">Top Headlines:</span> -->
-                            <span class="small movie-rss">
-                                
-                            </span>
-                        </div>
-                    </div>
                     <div class="carousel slide text-dark text-left" data-ride="carousel" id="movies-slide">
                         <ul class="carousel-indicators">
                             <li data-target="#movies-slide" data-slide-to="0" class="active"></li>
@@ -475,7 +481,6 @@
                             });
                             
                             var i = 0;
-                            $(".movie-rss").html("<b>Top Headlines</b>");
                             setInterval(function(){
                                 if(i < articles.title.length){
                                     $(".movie-rss").html("<a href='"+articles.urls[i]+"' target='_blank'>"+articles.title[i]+"</a>");
