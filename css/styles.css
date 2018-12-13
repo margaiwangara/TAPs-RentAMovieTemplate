@@ -9,6 +9,9 @@ body {
 #movie-carousel-section {
   min-height: 500px;
   width: 100%; }
+  #movie-carousel-section .rss-display a {
+    color: #000;
+    text-decoration: none; }
 
 #movies-slide .carousel-item {
   height: 500px; }
@@ -75,3 +78,6 @@ body {
     bottom: 0;
     width: 100%;
     height: 100%; }
+
+#show-movie-section .show-movie-inner {
+  padding-top: 50px; }
