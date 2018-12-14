@@ -19,24 +19,21 @@ body {
   #news-feeds .rss-display a:hover {
     text-decoration: underline; }
   #news-feeds .news-label {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 130px;
     background: #ba4a00; }
 
 #movies-slide .carousel-item {
   height: 500px; }
-#movies-slide .movie-image-1 {
-  background: url("/img/another-phone-bg.jpg");
-  background-size: cover; }
-#movies-slide .movie-image-2 {
-  background: url("/img/phone-bg.jpg");
-  background-size: cover; }
-#movies-slide .movie-image-3 {
-  background: url("/img/laptop-1.jpg");
-  background-size: cover; }
+  #movies-slide .carousel-item i {
+    padding-left: 5px; }
+#movies-slide .carousel-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6); }
 
 #new-releases-section .dark-overlay {
   background: rgba(0, 0, 0, 0.4);

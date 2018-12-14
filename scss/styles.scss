@@ -16,6 +16,7 @@ body{
     min-height: 500px;
     width: 100%;
 
+    
 }
 
 #news-feeds{
@@ -32,11 +33,6 @@ body{
     }
 
     .news-label{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        height: 100%;
-        width: 130px;
         background: $margai-border;
     }
 }
@@ -44,21 +40,20 @@ body{
 #movies-slide{
     .carousel-item{
         height: 500px;
-    }
-    .movie-image-1{
-        background: url("/img/another-phone-bg.jpg");
-        background-size: cover;
+
+        i{
+            padding-left: 5px;
+        }
     }
 
-    .movie-image-2{
-        background: url("/img/phone-bg.jpg");
-        background-size: cover;
+    .carousel-item:after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0; bottom: 0;right: 0;left: 0;
+        background: rgba(0, 0, 0 , 0.6);
     }
 
-    .movie-image-3{
-        background: url("/img/laptop-1.jpg");
-        background-size: cover;
-    }
 }
 
 #new-releases-section{
