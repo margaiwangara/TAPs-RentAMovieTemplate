@@ -170,7 +170,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card-deck p-2 mb-1 text-light text-center" >
+                    <div class="card-deck p-2 mb-1 text-light text-center">
                         <div class="card card-movie-1">
                             <img src="/img/black-panther-sm.jpg" alt="black-panther-poster" class="rounded img-fluid">
                             <a href="#">
@@ -221,15 +221,14 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="card card-movie-6">
+                        <div class="card">
                             <img src="/img/get-out-poster-sm.jpg" alt="get-out-poster" class="rounded img-fluid">
-                            <a href="#">
-                                <div class="dark-overlay rounded">
-                                    <div class="card-img-overlay">
-                                        <small class="font-weight-bold">Get Out</small>
-                                    </div>
-                                </div>
-                            </a>
+                            <div class="dark-overlay rounded-top"></div>
+                            <div class="card-img-overlay">
+                                <small class="font-weight-bold text-capitalize">
+                                    <a href="#">Get Out</a>
+                                </small>
+                            </div>
                         </div>
                         <div class="card card-movie-7">
                             <img src="/img/black-panther-sm.jpg" alt="black-panther-poster" class="rounded img-fluid">
@@ -284,7 +283,7 @@
                                 <source src="video/sample.MP4" type="video/mp4" class="img-fluid">
                             </video> -->
                             <div class="movie-trailer-wrapper">
-                                <iframe src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0"
+                                <iframe src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
                         </div>
@@ -529,7 +528,7 @@
                         for(var i=0;i < 7;i++){
                             movieData += "<div class='card'>";
                             movieData += "<img src='" + movies.base + movies.posterPath[i] + "' alt='" + movies.title[i] +"-poster' class='rounded img-fluid'>";
-                            movieData += "<div class='dark-overlay rounded></div>";
+                            movieData += "<div class='dark-overlay rounded-top'></div>";
                             movieData += "<div class='card-img-overlay'><small class='font-weight-bold text-capitalize'><a href='#' data-target='#movie-details-modal' data-toggle='modal' data-movie-id='"+ movies.id[i]+"'>"+movies.title[i]+"</a></small>";
                             movieData += "<br><a href='#' data-target='#movie-details-modal' data-toggle='modal' data-movie-id='"+ movies.id[i] +"'><i class='fas fa-play-circle mr-1'></i><a href='#' data-target='#movie-details-modal' data-toggle='modal' data-movie-id='"+ movies.id[i]+"'<i class='fas fa-info-circle'></i></a></div></div>";
                             
