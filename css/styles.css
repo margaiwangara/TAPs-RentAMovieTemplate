@@ -1,6 +1,28 @@
 .navbar {
   border-bottom: solid 3px #ba4a00; }
 
+.notification-display {
+  min-width: 270px;
+  overflow-x: hidden;
+  max-height: 350px;
+  overflow-y: scroll;
+  padding-right: 10px; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+.dropdown-toggle::after {
+  display: none; }
+
+::-webkit-scrollbar-thumb {
+  background: #ba4a00; }
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dc7633; }
+
 body {
   max-width: 100%;
   overflow-x: hidden;

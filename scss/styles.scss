@@ -6,6 +6,32 @@ $margai-new: #dc7633;
   border-bottom: solid 3px $margai-border;
 }
 
+.notification-display {
+  min-width: 270px;
+  overflow-x: hidden;
+  max-height: 350px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: $margai-border;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $margai-new;
+}
 body {
   max-width: 100%;
   overflow-x: hidden;
