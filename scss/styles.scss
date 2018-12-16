@@ -10,8 +10,19 @@ $margai-new: #dc7633;
   min-width: 270px;
   overflow-x: hidden;
   max-height: 350px;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-right: 10px;
+}
+
+.user-display {
+  min-width: 200px;
+  overflow-x: hidden;
+  max-height: 300px;
+  overflow-y: auto;
+
+  .content-flex > * {
+    align-self: center;
+  }
 }
 
 ::-webkit-scrollbar {
